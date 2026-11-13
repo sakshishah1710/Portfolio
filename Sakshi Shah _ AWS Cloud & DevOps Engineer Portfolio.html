@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakshi Shah | AWS Cloud & DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F6FB;--ink:#0E2747;--mut:#4A6283;--line:#B9CCE3;--card:#FFFFFF;--acc:#C25400;--blue:#1D5FD1;--grid:rgba(29,95,209,.08);color-scheme:light;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E2B50;--ink:#EAF3FF;--mut:#9FB8D8;--line:#2F5384;--card:#133766;--acc:#FFA21F;--blue:#7DB4FF;--grid:rgba(125,180,255,.09);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E2B50;--ink:#EAF3FF;--mut:#9FB8D8;--line:#2F5384;--card:#133766;--acc:#FFA21F;--blue:#7DB4FF;--grid:rgba(125,180,255,.09);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;
+ background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav b{font:800 20px "Bricolage Grotesque",sans-serif}
+nav div{display:flex;gap:20px;font-size:15px}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover,nav a:focus-visible{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.hero{padding:48px 0 40px}
+.hero h1{font-size:clamp(52px,12vw,120px);font-weight:800;letter-spacing:-.03em}
+.hero .role{font:500 clamp(20px,3.4vw,30px)/1.2 "Bricolage Grotesque",sans-serif;color:var(--blue);margin:14px 0 10px}
+.hero p{max-width:54ch;color:var(--mut);margin:0 0 34px}
+.pipe{position:relative;display:grid;grid-template-columns:repeat(5,1fr);margin:6px 0 18px;text-align:center}
+.pipe .rail{position:absolute;top:11px;left:10%;right:10%;height:2px;background:var(--line)}
+.pipe .fill{position:absolute;top:11px;left:10%;height:2px;background:var(--acc);width:0;transition:width .9s ease}
+.pk{position:absolute;top:5px;left:10%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 25%,transparent);transition:left .9s ease}
+.st{position:relative;z-index:1}
+.st b{display:block;width:24px;height:24px;margin:0 auto 8px;border-radius:50%;background:var(--bg);border:2px solid var(--line);transition:.4s}
+.st.on b{border-color:var(--acc);background:var(--acc)}
+.st span{font-size:14px;color:var(--mut);transition:color .4s}.st.on span{color:var(--ink);font-weight:600}
+.term{font:500 14px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 16px;min-height:46px;color:var(--ink)}
+.term i{font-style:normal;color:var(--acc)}
+.term u{display:inline-block;width:8px;height:1em;background:var(--acc);vertical-align:-2px;margin-left:3px;animation:bl 1s steps(2) infinite;text-decoration:none}
+@keyframes bl{50%{opacity:0}}
+section{padding:54px 0 8px}
+h2{font-size:clamp(30px,5vw,44px);font-weight:800;letter-spacing:-.02em;margin-bottom:22px}
+.job{display:grid;grid-template-columns:170px 1fr;gap:6px 28px;padding:20px 0;border-top:1px solid var(--line)}
+.job .d{color:var(--mut);font-size:15px}
+.job h3{font-size:22px;font-weight:500}.job h3 span{color:var(--mut);font-weight:500}
+.job ul{margin:10px 0 0;padding-left:18px}.job li{margin-bottom:6px}
+.sk{display:grid;grid-template-columns:170px 1fr;gap:8px 28px;padding:14px 0;border-top:1px solid var(--line)}
+.sk h3{font:600 16px Figtree,sans-serif;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:3px 12px;font-size:14.5px}
+.pj{border-top:1px solid var(--line)}.pj:last-child{border-bottom:1px solid var(--line)}
+.pj h3{font-size:inherit}
+.pj button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 16px;padding:22px 4px}
+.pj button:focus-visible{outline:2px solid var(--acc);outline-offset:-2px}
+.pj .n{font:800 clamp(22px,3.6vw,32px)/1.1 "Bricolage Grotesque",sans-serif;transition:color .25s,transform .25s}
+.pj .t{grid-column:1;color:var(--mut);font-size:15px}
+.pj .ch{grid-column:2;grid-row:1/3;width:34px;height:34px;border:1.5px solid var(--line);border-radius:50%;position:relative;transition:transform .35s,background .25s,border-color .25s}
+.ch:before,.ch:after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;margin:-1px 0 0 -6px;background:var(--ink);transition:.3s}
+.ch:after{transform:rotate(90deg)}
+.pj button:hover .n{color:var(--acc);transform:translateX(6px)}
+.pj button[aria-expanded="true"] .n{color:var(--acc)}
+.pj button[aria-expanded="true"] .ch{transform:rotate(180deg);background:var(--acc);border-color:var(--acc)}
+.pj button[aria-expanded="true"] .ch:before,.pj button[aria-expanded="true"] .ch:after{background:var(--bg)}
+.pj button[aria-expanded="true"] .ch:after{transform:rotate(0)}
+.pd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s ease}
+.pd.open{grid-template-rows:1fr}
+.pd>div{overflow:hidden}
+.pd .in{padding:2px 4px 26px;max-width:760px}
+.pd p{margin:0 0 12px}.pd ul{margin:0 0 16px;padding-left:18px}.pd li{margin-bottom:6px}
+.pd .chips{margin-top:4px}.pd .lnk{display:inline-block;margin:6px 0 14px;color:var(--acc);font-weight:600}
+.edu{display:grid;grid-template-columns:170px 1fr;gap:4px 28px;padding:14px 0;border-top:1px solid var(--line)}
+.edu span{color:var(--mut);font-size:15px}
+.contact{padding:60px 0}
+.contact h2{font-size:clamp(34px,7vw,64px)}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.contact a{padding:10px 20px;border:1.5px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:600;transition:.25s}
+.contact a:hover,.contact a:focus-visible{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+footer{padding:0 0 36px;color:var(--mut);font-size:14px}
+@media (max-width:680px){.job,.sk,.edu{grid-template-columns:1fr}.pipe .st span{font-size:12px}nav div{gap:14px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Sakshi Shah</b><div><a href="#work">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+ <h1>Sakshi Shah</h1>
+ <div class="role">AWS Cloud &amp; DevOps Engineer</div>
+ <p>I build the pipelines and cloud infrastructure that carry software from commit to production, securely and with less manual work.</p>
+ <div class="pipe" id="pipe" aria-hidden="true">
+  <div class="rail"></div><div class="fill" id="fill"></div><i class="pk" id="pk"></i>
+  <div class="st"><b></b><span>Commit</span></div><div class="st"><b></b><span>Build</span></div><div class="st"><b></b><span>Test</span></div><div class="st"><b></b><span>Deploy</span></div><div class="st"><b></b><span>Monitor</span></div>
+ </div>
+ <div class="term" aria-live="off"><i>$</i> <span id="log">git push origin main</span><u></u></div>
+</header>
+
+<section id="work">
+ <h2>Experience</h2>
+ <div class="job"><div class="d">Sep 2025 – Present</div><div>
+  <h3>DevOps Engineer <span>· Maxgen Technology</span></h3>
+  <ul>
+   <li>Design, build, and maintain end-to-end CI/CD pipelines with Jenkins, Git, and Docker to automate build, test, and deployment.</li>
+   <li>Provision and manage AWS infrastructure (Amazon EC2, S3, IAM, VPC) on Linux with Terraform and Infrastructure as Code (IaC).</li>
+   <li>Write Bash and Python automation that removes repetitive manual tasks and reduces human error.</li>
+   <li>Work with development and QA teams in Agile sprints to resolve deployment failures and performance issues.</li></ul></div></div>
+ <div class="job"><div class="d">Feb – Mar 2023</div><div>
+  <h3>AWS Engineer Intern <span>· Maxgen Technology</span></h3>
+  <ul><li>Configured Amazon EC2 instances and S3 buckets for staging environments on a live project.</li>
+  <li>Co-developed Jenkins CI pipelines and Git-based version control workflows.</li></ul></div></div>
+</section>
+
+<section id="skills">
+ <h2>Skills</h2>
+ <div class="sk"><h3>AWS</h3><div class="chips"><span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span><span>Auto Scaling</span><span>API Gateway</span><span>Lambda</span><span>DynamoDB</span><span>Cognito</span><span>CloudWatch</span><span>RDS</span><span>EKS</span><span>CloudFront</span><span>Route 53</span></div></div>
+ <div class="sk"><h3>DevOps</h3><div class="chips"><span>Terraform</span><span>Infrastructure as Code</span><span>Kubernetes</span><span>Docker</span><span>Jenkins</span><span>GitHub Actions</span><span>CI/CD</span></div></div>
+ <div class="sk"><h3>Monitoring</h3><div class="chips"><span>Prometheus</span><span>Grafana</span><span>Amazon CloudWatch</span></div></div>
+ <div class="sk"><h3>Systems</h3><div class="chips"><span>Linux (Ubuntu)</span><span>Git</span><span>Bash</span><span>Python</span><span>YAML</span><span>Networking</span></div></div>
+</section>
+
+<section id="projects">
+ <h2>Projects</h2>
+ <p style="margin:-10px 0 18px;color:var(--mut)">Select a project name to open its details.</p>
+
+ <article class="pj"><h3><button aria-expanded="false" aria-controls="p1"><span class="n">Coding Cloud Hub</span><span class="ch"></span><span class="t">EdTech platform with DevOps automation on AWS</span></button></h3>
+  <div class="pd" id="p1"><div><div class="in">
+   <p>A full-stack EdTech platform deployed on AWS, with infrastructure and releases fully automated.</p>
+   <ul><li>Built and deployed the platform (React, Node.js, MySQL on Amazon RDS) with infrastructure provisioned by Terraform on Amazon EC2 and Amazon EKS.</li>
+   <li>Orchestrated containerized microservices on Amazon EKS with an Ingress controller and Horizontal Pod Autoscaler (HPA) for scalable, fault-tolerant delivery.</li>
+   <li>Automated build, test, and deployment with Jenkins and Docker CI/CD pipelines, reducing manual release effort.</li></ul>
+   <div class="chips"><span>Amazon EC2</span><span>Amazon EKS</span><span>Amazon RDS</span><span>Terraform</span><span>Kubernetes</span><span>Jenkins</span><span>Docker</span><span>React</span><span>Node.js</span><span>MySQL</span></div>
+  </div></div></div></article>
+
+ <article class="pj"><h3><button aria-expanded="false" aria-controls="p2"><span class="n">Real-Time Kubernetes Monitoring Dashboard</span><span class="ch"></span><span class="t">Prometheus and Grafana on Kubernetes</span></button></h3>
+  <div class="pd" id="p2"><div><div class="in">
+   <p>A real-time monitoring system for Kubernetes that turns cluster metrics into live dashboards and alerts.</p>
+   <ul><li>Collected node and cluster metrics with Node Exporter and kube-state-metrics.</li>
+   <li>Stored and queried the metrics in Prometheus, and visualized them in Grafana dashboards.</li>
+   <li>Set up email notifications so issues reach the team quickly.</li></ul>
+   <div class="chips"><span>Kubernetes</span><span>Prometheus</span><span>Grafana</span><span>Node Exporter</span><span>kube-state-metrics</span><span>Docker</span><span>Jenkins</span></div>
+  </div></div></div></article>
+
+ <article class="pj"><h3><button aria-expanded="false" aria-controls="p3"><span class="n">Serverless REST API with Authentication</span><span class="ch"></span><span class="t">API Gateway, Lambda, DynamoDB, and Cognito</span></button></h3>
+  <div class="pd" id="p3"><div><div class="in">
+   <p>A fully serverless, scalable, and secure REST API on AWS.</p>
+   <ul><li>Exposed the API through Amazon API Gateway with user authentication handled by Amazon Cognito.</li>
+   <li>Ran the backend logic on AWS Lambda with no servers to manage.</li>
+   <li>Stored data in Amazon DynamoDB for fast, scalable access.</li></ul>
+   <div class="chips"><span>Amazon API Gateway</span><span>AWS Lambda</span><span>Amazon DynamoDB</span><span>Amazon Cognito</span></div>
+  </div></div></div></article>
+
+ <article class="pj"><h3><button aria-expanded="false" aria-controls="p4"><span class="n">AWS Serverless Portfolio Deployment</span><span class="ch"></span><span class="t">Secure static hosting on S3 and CloudFront</span></button></h3>
+  <div class="pd" id="p4"><div><div class="in">
+   <p>A secure, high-performance personal portfolio website on a serverless architecture.</p>
+   <ul><li>Hosted the site on Amazon S3 behind Amazon CloudFront for low-latency, highly available global delivery.</li>
+   <li>Enforced HTTPS-only access with Origin Access Control (OAC) and least-privilege IAM and bucket policies, so S3 is never exposed directly.</li>
+   <li>Configured caching and cache invalidation to balance speed and content freshness.</li></ul>
+   <a class="lnk" href="https://d33pobe4fy637e.cloudfront.net/sakshi_shah_devops_portfolio.html" target="_blank" rel="noopener">Open the live site</a>
+   <div class="chips"><span>Amazon S3</span><span>Amazon CloudFront</span><span>AWS IAM</span><span>Origin Access Control</span><span>Route 53</span></div>
+  </div></div></div></article>
+
+ <article class="pj"><h3><button aria-expanded="false" aria-controls="p5"><span class="n">3-Tier Architecture App</span><span class="ch"></span><span class="t">Highly available design with ALB, Auto Scaling, and VPC</span></button></h3>
+  <div class="pd" id="p5"><div><div class="in">
+   <p>A scalable, highly available 3-tier application on AWS, split into web, app, and database tiers.</p>
+   <ul><li>Designed the architecture with an Application Load Balancer, Auto Scaling Groups, multi-AZ VPC subnets, and IAM roles.</li>
+   <li>Segmented public and private subnets to improve fault isolation, security, and disaster recovery readiness.</li></ul>
+   <div class="chips"><span>Application Load Balancer</span><span>Auto Scaling Groups</span><span>Amazon VPC</span><span>AWS IAM</span><span>Amazon EC2</span><span>Amazon RDS</span></div>
+  </div></div></div></article>
+</section>
+
+<section id="education">
+ <h2>Education</h2>
+ <div class="edu"><span>2021 – 2024</span><div><b>B.E. in Computer Science</b>, SGPA 9.25</div></div>
+ <div class="edu"><span>2018 – 2021</span><div><b>Diploma in Computer Technology</b>, 85.41%</div></div>
+</section>
+
+<section class="contact" id="contact">
+ <h2>Let’s build something reliable.</h2>
+ <p style="color:var(--mut);margin:0">Open to AWS DevOps Engineer, Cloud Engineer, and Site Reliability Engineer roles.</p>
+ <div class="row">
+  <a href="mailto:shahsakshi1702@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/sakshi-shah-7815b31a4/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/sakshishah1710" target="_blank" rel="noopener">GitHub</a>
+  <a href="tel:+919373070153">Call</a>
+ </div>
+</section>
+<footer>© Sakshi Shah</footer>
+</div>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.pj button');
+  function setOpen(b,open){
+    var p=document.getElementById(b.getAttribute('aria-controls'));
+    b.setAttribute('aria-expanded',open);p.classList.toggle('open',open);
+    if(open){p.removeAttribute('inert')}else{p.setAttribute('inert','')}
+  }
+  btns.forEach(function(b){
+    setOpen(b,false);
+    b.addEventListener('click',function(){
+      var open=b.getAttribute('aria-expanded')!=='true';
+      btns.forEach(function(o){if(o!==b)setOpen(o,false)});
+      setOpen(b,open);
+    });
+  });
+  var st=document.querySelectorAll('.st'),pk=document.getElementById('pk'),fill=document.getElementById('fill'),log=document.getElementById('log');
+  var logs=['git push origin main','jenkins: docker build and tests running','pipeline: all tests passed','deploy: rolling update on Amazon EKS','cloudwatch: all checks healthy'];
+  function show(i){
+    st.forEach(function(s,k){s.classList.toggle('on',k<=i)});
+    pk.style.left=(10+i*20)+'%';fill.style.width=(i*20)+'%';log.textContent=logs[i];
+  }
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){show(4);return}
+  var i=0;show(0);
+  setInterval(function(){i=(i+1)%5;show(i)},1500);
+})();
+</script>
+</body>
+</html>
